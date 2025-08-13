@@ -1,0 +1,7 @@
+FROM postgres:15-alpine
+
+USER root
+
+RUN apk add --no-cache postgresql15-plperl || apk add --no-cache postgresql-plperl
+
+USER postgres
