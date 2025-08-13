@@ -15,6 +15,6 @@ RUN mkdir -p /pg-unlogged/15-5432 \
     && chown postgres:postgres /pg-unlogged/15-5432
 
 RUN mkdir -p /mnt/apagarvolume \
-    && chown postgres:postgres /mnt/apagarvolume \
+    && chown postgres:postgres /mnt/apagarvolume
 
 COPY create-roles.sql /docker-entrypoint-initdb.d/00-create-roles.sql
